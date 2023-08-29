@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectName.Database", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectName.Abstractions", "src\ProjectName.Abstractions\ProjectName.Abstractions.csproj", "{DFDC44BF-3202-49AA-BD46-8050F416444D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectName.Database.Abstractions", "src\ProjectName.Database.Abstractions\ProjectName.Database.Abstractions.csproj", "{E0513414-D02C-4971-BF9E-54A7A18E2F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectName.Database.Abstractions", "src\ProjectName.Database.Abstractions\ProjectName.Database.Abstractions.csproj", "{E0513414-D02C-4971-BF9E-54A7A18E2F89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

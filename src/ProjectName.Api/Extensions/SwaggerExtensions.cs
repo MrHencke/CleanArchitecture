@@ -18,7 +18,7 @@ namespace ProjectName.Api.Extensions
                     {
                         Name = "Creator Name",
                         Email = "Creator Email",
-                        Url = new Uri("www.example.com")
+                        Url = new Uri("https://example.com")
                     }
                 });
 

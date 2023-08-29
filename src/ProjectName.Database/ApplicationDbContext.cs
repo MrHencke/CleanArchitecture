@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using ProjectName.Abstractions.Common;
 using ProjectName.Database.Abstractions;
 using ProjectName.Database.Abstractions.Entities;
+using ProjectName.Database.Abstractions.Extensions;
 using System.Reflection;
 
 namespace ProjectName.Database
@@ -20,10 +21,10 @@ namespace ProjectName.Database
                 switch (entry.State)
                 {
                     case EntityState.Added:
-                        entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedDate = DateTime.Now.SetKindUtc();
                         break;
                     case EntityState.Modified:
-                        entry.Entity.ModifiedDate = DateTime.Now;
+                        entry.Entity.ModifiedDate = DateTime.Now.SetKindUtc();
                         break;
                 }
             }

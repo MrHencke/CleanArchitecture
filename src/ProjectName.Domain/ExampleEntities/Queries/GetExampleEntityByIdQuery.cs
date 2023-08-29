@@ -24,7 +24,7 @@ namespace ProjectName.Domain.ExampleEntities.Queries
 
         public async Task<ExampleEntity?> Handle(GetExampleEntityByIdQuery query, CancellationToken cancellationToken)
         {
-            return await _exampleRepository.GetExampleEntityById(query.Id);
+            return await _exampleRepository.GetExampleEntityById(query.Id, cancellationToken);
         }
     }
 }

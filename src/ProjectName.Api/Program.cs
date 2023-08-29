@@ -1,3 +1,4 @@
+using FluentValidation.AspNetCore;
 using ProjectName.Api.Extensions;
 using ProjectName.Database.Extensions;
 using ProjectName.Domain.Extensions;

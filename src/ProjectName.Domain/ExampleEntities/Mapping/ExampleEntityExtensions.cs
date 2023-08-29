@@ -9,7 +9,7 @@ namespace ProjectName.Domain.ExampleEntities.Mapping
         {
             return new ExampleEntity()
             {
-                Id = command.Id,
+                Id = Guid.NewGuid(),
                 ExampleValue1 = command.ExampleValue1,
                 ExampleValue2 = command.ExampleValue2,
                 ExampleValue3 = command.ExampleValue3,

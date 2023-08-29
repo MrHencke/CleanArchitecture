@@ -13,7 +13,9 @@ namespace ProjectName.Database.Extensions
         {
             services.AddDbContext<ApplicationDbContext>(o => o.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
+#pragma warning disable CS8603 // Possible null reference return.
             services.AddScoped<IApplicationDbContext>(provider => provider.GetService<ApplicationDbContext>());
+#pragma warning restore CS8603 // Possible null reference return.
 
             services.AddScoped<IExampleRepository, ExampleRepository>();
 

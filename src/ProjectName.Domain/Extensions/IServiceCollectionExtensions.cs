@@ -1,4 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using FluentValidation;
+using FluentValidation.AspNetCore;
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+using ProjectName.Domain.Behavior;
 using System.Reflection;
 
 namespace ProjectName.Domain.Extensions
@@ -11,6 +15,11 @@ namespace ProjectName.Domain.Extensions
             {
                 c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
             });
+            services.AddFluentValidationAutoValidation();
+            services.AddFluentValidationClientsideAdapters();
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationPipelineBehavior<,>));
+
 
             return services;
         }
