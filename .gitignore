@@ -397,5 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-# Local migrations
-src/ProjectName.Database/Migrations
+# Local files
+src/ProjectName.Database/LocalMigrations
