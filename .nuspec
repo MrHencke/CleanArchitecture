@@ -9,6 +9,7 @@
     <summary>
       My personal Clean Architecture template for Web Apis in .NET 7.0
     </summary>
+    <version>1.0.1</version>
     <releaseNotes>
       Update nuget schema
     </releaseNotes>
