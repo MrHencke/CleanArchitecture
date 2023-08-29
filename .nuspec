@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2016/06/nuspec.xsd">
   <metadata>
 
     <id>Hencke.Dev.CleanArchitecture</id>
-    <version>1.0</version>
     <title>Hencke.dev Clean Architecture</title>
     <authors>Henrik Hammer</authors>
     <description>My personal Clean Architecture template for Web Apis in .NET 7.0</description>
@@ -11,7 +10,7 @@
       My personal Clean Architecture template for Web Apis in .NET 7.0
     </summary>
     <releaseNotes>
-      Initial release.
+      Updated readme.
     </releaseNotes>
     <packageTypes>
       <packageType name="Template" />
