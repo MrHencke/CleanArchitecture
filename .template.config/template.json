@@ -4,7 +4,7 @@
 	"classifications": ["Api", "WebApi", "CleanArchitecture", "CQRS"],
 	"identity": "Hencke.Dev.CleanArchitecture",
 	"name": "Hencke.dev Clean Architecture",
-	"shortName": "h-ca-sln",
+	"shortName": "h-cln",
 	"sourceName": "ProjectName",
 	"preferNameDirectory": true,
 	"tags": {

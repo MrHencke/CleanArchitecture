@@ -27,8 +27,8 @@ This is my preferred template for a simple .NET Core 7 Web Api with Clean Archit
 
 :heavy_check_mark: Database with EF Core\
 :heavy_check_mark: CQRS with MediatR\
-:heavy_check_mark: Predefined Swagger with XMLDoc;
-:heavy_check_mark: My preferred .editorconfig;
+:heavy_check_mark: Swagger with XMLDoc\
+:heavy_check_mark: My preferred .editorconfig\
 
 Made with :heart: by <a href="https://github.com/MrHencke" target="_blank">Henrik</a>
 

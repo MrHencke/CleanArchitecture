@@ -1,0 +1,34 @@
+name: Package
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '.nuspec'
+  pull_request:
+    branches:
+      - master
+    paths:
+      - '.nuspec'
+
+jobs:
+  publish:
+    name: Publish to NuGet
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        name: Checkout code
+
+      - uses: nuget/setup-nuget@v1
+        name: Setup NuGet
+        with:
+          nuget-version: 'latest'
+
+      - name: Create the package
+        run: nuget pack .nuspec -NoDefaultExcludes
+        
+      - name: Publish the package
+        run: nuget push *.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_KEY}} -SkipDuplicate

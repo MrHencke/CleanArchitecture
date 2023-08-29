@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+
+    <id>Hencke.Dev.CleanArchitecture</id>
+    <version>1.0</version>
+    <title>Hencke.dev Clean Architecture</title>
+    <authors>Henrik Hammer</authors>
+    <description>My personal Clean Architecture template for Web Apis in .NET 7.0</description>
+    <summary>
+      My personal Clean Architecture template for Web Apis in .NET 7.0
+    </summary>
+    <releaseNotes>
+      Initial release.
+    </releaseNotes>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+
+    <projectUrl>https://github.com/MrHencke/CleanArchitecture</projectUrl>
+    <repository type="git" url="https://github.com/MrHencke/CleanArchitecture.git" branch="master" />
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <tags>api webapi cleanarchitecture cqrs chsarp dotnet template</tags>
+  </metadata>
+
+  <files>
+    <file src="README.md" />
+    <file src=".\**" target="content" exclude=".\.git\**;**\bin\**;**\obj\**;.\.vs\**;.\.github\workflows\pack.yml;.\LICENSE;.\README.md;" />
+  </files>
+
+</package>
