@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2016/06/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
 
     <id>Hencke.Dev.CleanArchitecture</id>
@@ -10,7 +10,7 @@
       My personal Clean Architecture template for Web Apis in .NET 7.0
     </summary>
     <releaseNotes>
-      Updated readme.
+      Update nuget schema
     </releaseNotes>
     <packageTypes>
       <packageType name="Template" />
