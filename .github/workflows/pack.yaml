@@ -6,11 +6,6 @@ on:
       - master
     paths:
       - '.nuspec'
-  pull_request:
-    branches:
-      - master
-    paths:
-      - '.nuspec'
 
 jobs:
   publish:
